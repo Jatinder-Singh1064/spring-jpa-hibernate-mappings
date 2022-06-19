@@ -1,0 +1,116 @@
+//http://localhost:8080/saveEmployees -- POST
+//Request Body
+
+[
+    {
+        "empName": "Mohit",
+        "empAge": 28,
+        "address": 
+            {
+                "city": "Pune",
+                "addressType": "Home"
+            },
+        "accounts": [
+            {
+                "accountType": "Savings"
+            }
+        ]
+    },
+    {
+        "empName": "Rohit",
+        "empAge": 38,
+        "address": 
+            {
+                "city": "Delhi",
+                "addressType": "Office"
+            },
+        "accounts": [
+            {
+                "accountType": "Savings"
+            },
+            {
+                "accountType": "Current"
+            }
+        ]
+    },
+    {
+        "empName": "Raaj",
+        "empAge": 35,
+        "address": 
+            {
+                "city": "Hyderabad",
+                "addressType": "Permanent"
+            },
+        "accounts": [
+            {
+                "accountType": "Joint"
+            },
+            {
+                "accountType": "Current"
+            }
+        ]
+    }
+]
+
+---------------------------------------------------------------------------------------------
+
+// http://localhost:8080/getEmployees -- GET
+// Output
+[
+    {
+        "empId": 1,
+        "empName": "Mohit",
+        "empAge": 28,
+        "address": {
+            "addressId": 2,
+            "city": "Pune",
+            "addressType": "Home"
+        },
+        "accounts": [
+            {
+                "id": 3,
+                "accountType": "Savings"
+            }
+        ]
+    },
+    {
+        "empId": 4,
+        "empName": "Rohit",
+        "empAge": 38,
+        "address": {
+            "addressId": 5,
+            "city": "Delhi",
+            "addressType": "Office"
+        },
+        "accounts": [
+            {
+                "id": 6,
+                "accountType": "Savings"
+            },
+            {
+                "id": 7,
+                "accountType": "Current"
+            }
+        ]
+    },
+    {
+        "empId": 8,
+        "empName": "Raaj",
+        "empAge": 35,
+        "address": {
+            "addressId": 9,
+            "city": "Hyderabad",
+            "addressType": "Permanent"
+        },
+        "accounts": [
+            {
+                "id": 10,
+                "accountType": "Joint"
+            },
+            {
+                "id": 11,
+                "accountType": "Current"
+            }
+        ]
+    }
+]
